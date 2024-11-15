@@ -1,0 +1,666 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+text-decoration: none;
+list-style: none;
+scroll-behavior: smooth;
+
+
+}:root {
+    --bg-color: #fff; /* Set your background color */
+    --second-color: #000; /* Set your secondary color */
+    --text-color: #333;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 5px 18%;
+    transition: ease 0.40s;
+    background: #000;
+}  
+
+  
+
+  
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+  
+.logo {
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--bg-color);
+    font: style 12px;
+        font-family: "Yatra One", serif;
+        font-weight: 400;
+        font-style: normal;
+      
+      
+      
+} 
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 4px;
+    transition: ease 0.40s;
+}
+.custom-login-button {
+    background: transparent;
+    font-weight: 600;
+    padding: 10px 22px;
+    transition: ease 0.40s;
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    
+}
+
+.custom-login-button:hover {
+    color: var(--second-color); /* Change text color on hover */
+    background: #ffffff; 
+}
+  
+  
+
+.navbar a:hover {
+    background: var(--bg-color);
+    color: var(--second-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+}
+
+#menu-icon {
+    color: var(--text-color);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 5px;
+    
+        
+    }
+    
+    .navbar .custom-login-button {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-color);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: left 0.3s ease;
+        
+    }
+   
+   
+    .navbar.active {
+        left: 0;
+    }
+}
+
+
+
+    section{
+        padding: 80px 18%;
+    }
+    .home{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden; 
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    }
+   
+    
+    .home-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit:fill; 
+        z-index: -1;
+    }
+    .home-text h1{
+
+        font-size: var(--big-font);
+        line-height:1.2;
+        color: var(--bg-color);
+        font-family: 'Paytone one',sans-serif;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+     }
+     .home-text p{
+        color: var(--bg-color);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 38px;
+        margin-bottom: 50px;
+     }
+     .home-btn{
+        display: inline-block;
+        font-size: 16px;
+        padding: 15px 30px;
+        background:#ffffffbf;
+        color: var(--main-color);
+        border-radius: 4px;
+        transition: ease.40s;
+    }
+    .home-btn:hover{
+        background:var(--bg-color);
+        transform: scale(1.1);
+        }
+
+        header.sticky{
+            background: var(--bg-color);
+            padding: 10px 18%;
+            box-shadow: rgba(33,35,38,0.1) 0px 10px 10px -10px;
+        }
+    
+        .sticky .logo{
+            color: var(--text-color);
+        }
+.sticky .navbar a{
+    color: var(--text-color) ;
+}
+.text h2{
+    font-size: var(--h2-font);
+    line-height:1.2;
+}
+.row-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+.container-box{
+    background: var(--bg-color);
+    border: 1px solid #bc8181;
+    padding: 50px 10px;
+    border-radius: 4px;
+    transition: all 1s ease 0s;
+    cursor:pointer;
+}
+.container-img img{
+    height: 100px;
+    width:100px;
+    padding:15px;
+    background: var(--bg-color);
+    box-shadow: 5px 10px 30px rgba(174, 12, 12, 0.2);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.container-box h4{
+    font-size: 24px;
+    font-weight:600;
+    margin-bottom: 8px;
+}
+
+.container-box p{
+    font-size: 15px;
+    color: var(--second-color);
+}
+/* .container-box :hover{
+    box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+    border: 1px solid transparent;
+    transform: translateY(-3px);
+    transition: all 1s ease 0s;
+    
+} */
+ /* login form css with border and hover ,placing,box ,margin*/
+/* Add your existing CSS here */
+/* login and registration */
+.login-form-container,
+.register-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container form,
+.register-form-container form {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.login-form-container form:hover,
+.register-form-container form:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    border-color: var(--main-color);
+}
+
+.login-form-container form h3,
+.register-form-container form h3 {
+    font-size: 2rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+    letter-spacing: 1px;
+}
+#phone:valid{
+    border-color: green;
+}
+#phone :focus :invalid{
+    border-color: red;
+}
+
+.login-form-container form .box,
+.register-form-container form .box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+    margin: 0.6rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.login-form-container form .box:focus,
+.register-form-container form .box:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 5px rgba(110, 84, 250, 0.5);
+}
+
+.login-form-container form #remember,
+.register-form-container form #remember {
+    margin: 2rem 0;
+}
+
+.login-form-container form label,
+.register-form-container form label {
+    font-size: 1rem;
+    color: #666;
+}
+
+.login-form-container form .home-btn,
+.register-form-container form .home-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-form-container form .home-btn:hover,
+.register-form-container form .home-btn:hover {
+    background: #5a50e0;
+}
+
+.login-form-container form p,
+.register-form-container form p {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.login-form-container form p a,
+.register-form-container form p a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-form-container form p a:hover,
+.register-form-container form p a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+/* Book Section */
+.book {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align:center;
+    padding: 2.5rem 0;
+}
+.space{
+    text-align: center;
+    font-size: xx-large;
+}
+.heading span {
+    font-size: 3.5rem;
+    background: rgba(49, 59, 198, 0.2);
+    color: var(--main-color);
+    border-radius: .1rem;
+    padding: .2rem 1rem;
+}
+
+.heading span.space {
+    background: none;
+}
+
+/* Actual Booking Box CSS */
+.book .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.book.heading{
+   font-size: large;
+
+}
+.book .row .image img {
+    width: 100%; 
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.book .row .image {
+    flex: 1 1 45%; /* Adjust width percentage as needed */
+}
+
+.book .row form {
+    flex: 1 1 53%; /* Adjust width percentage as needed */
+    padding: 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.book .row form .inputbox {
+    margin-bottom: 1rem;
+}
+
+.book .row form .inputbox h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.book .row form .inputbox input,
+.book .row form .inputbox select,
+.book .row form button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+.book .row form button {
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.book .row form button:hover {
+    background: #5a50e0;
+}
+
+/* Variables */
+:root {
+    --main-color: #3140c6;
+}
+
+/* Packages CSS */
+/* Packages Section */
+.packages .pak-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center; /* Center the packages within the container */
+    width: 100%;
+}
+
+.packages .pak-box-container .pak-box, .package-card {
+    flex: 1 1 calc(50% - 2rem); /* Two packages per row with gap */
+    background: var(--cultured);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; /* Ensure bottom margin for spacing */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.packages .pak-box-container .pak-box img, .package-card .card-banner img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Card Content */
+.package-card .card-content, .pak-box .content {
+    padding: 30px 20px;
+}
+
+.package-card .card-title, .pak-box .title {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.package-card .card-text, .pak-box .text {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Meta Information */
+.card-meta-list {
+    background: var(--white);
+    max-width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.15);
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.card-meta-item {
+    position: relative;
+}
+
+.card-meta-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: -1px;
+    bottom: 4px;
+    width: 1px;
+    background: hsla(0, 0%, 0%, 0.3);
+}
+
+/* Card Footer (Price Section) */
+.package-card .card-price {
+    background: var(--united-nations-blue);
+    color: var(--white);
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.package-card .price {
+    font-size: var(--fs-2);
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-800);
+    margin-bottom: 20px;
+}
+
+.package-card .price span {
+    font-size: var(--fs-7);
+    font-weight: initial;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .packages .pak-box-container .pak-box, .package-card {
+        flex: 1 1 100%; /* One package per row on smaller screens */
+    }
+}
+
+.package .btn {
+    margin-inline: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .packages .pak-box-container .pak-box {
+        flex: 1 1 100%; /* One package per row on smaller screens */
+    }
+}
+
+
+
+/* service section */
+.service .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.service .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center; 
+}
+.service .box-container .box i{
+    padding: 1rem;
+    font-size:5rem;
+    color:var(--main-color);
+}
+
+.service .box-container .box h3{
+    font-size:2rem;
+    color:#bc8181;
+}
+.service .box-container .box p{
+    font-size:1.5rem;
+    color:#000;
+    padding: 1rem 0 ;
+}
+.service .bold {
+    font-size: 2rem;
+    text-align: center;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* service section ends */
+.link-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1rem;
+  }
+  .link-btn:hover {
+    color: #0056b3;
+  }
+/*footer */
+.footer {
+    background-color: #080f91;
+    color: white;
+    padding: 50px;
+    text-align: center;
+  }
+ 
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    margin-bottom: 20px;
+  }
+  
+  .footer-links a {
+    color: white;
+text-decoration: solid;
+    margin: 0 20px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-info {
+    font-size: 20px;
+  }
+  
