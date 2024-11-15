@@ -1,0 +1,144 @@
+/* Main Itinerary Container */
+.itinerary {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  margin: 20px auto; /* Center the container horizontally */
+  padding-top: 60px; /* Space at the top to avoid overlap with navbar */
+  font-family: Arial, sans-serif;
+  max-width: 800px; /* Limit the max width for better readability */
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+/* Itinerary Heading */
+.itinerary h1 {
+  font-size: 2.5rem; /* Heading font size */
+  margin-bottom: 15px; /* Space between heading and text */
+  color: #333; /* Darker color for better visibility */
+}
+
+/* Itinerary Description */
+.itinerary p {
+  margin-bottom: 20px;
+  font-size: 1.2rem; /* Paragraph font size */
+  color: #555; /* Medium gray color for the text */
+  line-height: 1.6; /* Increased line height for better text spacing */
+}
+
+/* Image Section - Grid Layout */
+.itinerary-images {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* Space between grid items */
+  margin-bottom: 20px; /* Space below images */
+  max-width: 100%; /* Allow images to take full width */
+}
+
+/* Main Itinerary Container */
+.itinerary {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  margin: 20px auto; /* Center the container horizontally */
+  padding-top: 60px; /* Space at the top to avoid overlap with navbar */
+  font-family: Arial, sans-serif;
+  max-width: 800px; /* Limit the max width for better readability */
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+/* Itinerary Heading */
+.itinerary h1 {
+  font-size: 2.5rem; /* Heading font size */
+  margin-bottom: 15px; /* Space between heading and text */
+  color: #333; /* Darker color for better visibility */
+}
+
+/* Itinerary Description */
+.itinerary p {
+  margin-bottom: 20px;
+  font-size: 1.2rem; /* Paragraph font size */
+  color: #555; /* Medium gray color for the text */
+  line-height: 1.6; /* Increased line height for better text spacing */
+}
+
+/* Image Section - Grid Layout */
+.itinerary-images {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* Space between grid items */
+  margin-bottom: 20px; /* Space below images */
+  max-width: 100%; /* Allow images to take full width */
+}
+
+.itinerary-images img {
+  width: 100%; /* Make images responsive */
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Itinerary Details */
+.itinerary-details {
+  margin-top: 20px; /* Space above details */
+}
+
+.itinerary-details > div {
+  border: 1px solid #ccc; /* Border for each day's itinerary */
+  border-radius: 8px; /* Rounded corners for the border */
+  padding: 15px; /* Padding inside the border */
+  margin-bottom: 20px; /* Space between different days */
+  background-color: #f9f9f9; /* Light background color for better contrast */
+}
+
+.itinerary-details h3 {
+  margin: 10px 0; /* Space for day heading */
+}
+
+.itinerary-details ul {
+  padding-left: 20px; /* Indentation for activities */
+}
+
+.itinerary-details li {
+  margin-bottom: 5px; /* Space between list items */
+}
+
+
+/* Itinerary Details */
+.itinerary-details {
+  margin-top: 20px; /* Space above details */
+}
+
+.itinerary-details > div {
+  border: 1px solid #ccc; /* Border for each day's itinerary */
+  border-radius: 8px; /* Rounded corners for the border */
+  padding: 15px; /* Padding inside the border */
+  margin-bottom: 20px; /* Space between different days */
+  background-color: #f9f9f9; /* Light background color for better contrast */
+}
+
+.itinerary-details h3 {
+  margin: 10px 0; /* Space for day heading */
+}
+
+.itinerary-details ul {
+  padding-left: 20px; /* Indentation for activities */
+}
+
+.itinerary-details li {
+  margin-bottom: 5px; /* Space between list items */
+}
+.book-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+}
